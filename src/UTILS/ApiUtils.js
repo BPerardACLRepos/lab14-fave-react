@@ -1,6 +1,6 @@
 import request from 'superagent';
 
-const URL = `https://lab14-fave-sql.herokuapp.com/`;
+const URL = `https://lab14-fave-sql.herokuapp.com`;
 
 export async function userSignUp(email, password) {
     const response = await request
