@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteUserFavorite } from '../UTILS/ApiUtils';
+import { deleteUserFavorite, getAllUserFavorites } from '../UTILS/ApiUtils';
 
 
 export default class FavoritesPage extends React.Component {
@@ -21,13 +21,13 @@ export default class FavoritesPage extends React.Component {
         })
     }
 
-    handleDeleteFavorite = async (e) => {
-        e.preventDefault();
+    // handleDeleteFavorite = async (e) => {
+    //     e.preventDefault();
 
-        await deleteUserFavorite(id, this.props.token);
+    //     await deleteUserFavorite(id, this.props.token);
 
-        await this.fetchFavorites();
-    }
+    //     await this.fetchFavorites();
+    // }
 
     // Loading component with gif from past lab
     //

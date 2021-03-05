@@ -3,6 +3,7 @@ import {
     getCatFacts,
     getCatPics,
     getAllUserFavorites,
+    addUserFavorite,
 } from '../UTILS/ApiUtils.js';
 
 
@@ -44,22 +45,22 @@ export default class SearchPage extends React.Component {
         })
     }
 
-    handleAddFavorite = async (e) => {
-        e.preventDefault();
+    // handleAddFavorite = async (e) => {
+    //     e.preventDefault();
 
-        const catFact = this.state.catFacts[index];
-        const catPic = this.state.catPics[index];
+    //     const catFact = this.state.catFacts[index];
+    //     const catPic = this.state.catPics[index];
 
-        const favorite = {
-            fact_api_id: catFact._id,
-            fact: catFact.text,
-            pic_url: catPic.url,
-        }
+    //     const favorite = {
+    //         fact_api_id: catFact._id,
+    //         fact: catFact.text,
+    //         pic_url: catPic.url,
+    //     }
 
-        await addUserFavorite(favorite, this.props.token);
+    //     await addUserFavorite(favorite, this.props.token);
 
-        await this.fetchFavorites();
-    }
+    //     await this.fetchFavorites();
+    // }
 
     // Loading component with gif from past lab
     //

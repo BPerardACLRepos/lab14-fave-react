@@ -21,7 +21,7 @@ export async function userSignIn(email, password) {
 export async function getCatPics(amount) {
     const response = await request
         .get(`${URL}/pics?amount=${amount}`)
-        .set('x-api-key', REACT_APP_CATAPI)
+        .set('x-api-key', process.env.REACT_APP_CATAPI)
 
     return response.body;
 }
@@ -29,7 +29,6 @@ export async function getCatPics(amount) {
 export async function getCatFacts(amount) {
     const response = await request
         .get(`${URL}/facts?amount=${amount}`)
-        .set('x-api-key', REACT_APP_CATAPI)
 
     return response.body;
 }
