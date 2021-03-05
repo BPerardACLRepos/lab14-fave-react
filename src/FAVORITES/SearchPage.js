@@ -2,8 +2,8 @@ import React from 'react';
 import {
     getCatFacts,
     getCatPics,
-} from '../UTILS/api-utils.js';
-import { getAllUserFavorites } from '../UTILS/ApiUtils.js';
+    getAllUserFavorites,
+} from '../UTILS/ApiUtils.js';
 
 
 export default class SearchPage extends React.Component {

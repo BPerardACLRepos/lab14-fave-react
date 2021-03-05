@@ -1,5 +1,5 @@
 import React from 'react';
-import { userSignUp } from '../UTILS/api-utils.js';
+import { userSignUp } from '../UTILS/ApiUtils.js';
 
 export default class SignUpPage extends React.Component {
     state = {

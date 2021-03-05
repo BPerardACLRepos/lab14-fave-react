@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -6,12 +6,12 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { setUserStorage, getStoredUserToken } from './UTILS/local-storage-utils.js';
+import { setUserStorage, getStoredUserToken } from './UTILS/LocalStorageUtils.js';
 
 import Header from './COMPONENTS/Header.js';
 import PrivateRoute from './COMPONENTS/PrivateRoute.js';
 
-import SignInPage from './AUTH/SignIn.js';
+import SignInPage from './AUTH/SignInPage.js';
 import SignUpPage from './AUTH/SignUpPage.js';
 
 import FavoritesPage from './FAVORITES/FavoritesPage.js';
