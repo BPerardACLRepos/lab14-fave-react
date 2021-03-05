@@ -13,6 +13,7 @@ import PrivateRoute from './COMPONENTS/PrivateRoute.js';
 
 import SignInPage from './AUTH/SignIn.js';
 import SignUpPage from './AUTH/SignUpPage.js';
+
 import FavoritesPage from './FAVORITES/FavoritesPage.js';
 import SearchPage from './FAVORITES/SearchPage.js';
 
